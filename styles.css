@@ -13,13 +13,11 @@ a {
 }
 /******* HEADER AND NAV BAR *******/
 header {
-    background-color: lightblue;
     width: 100%;
 }
 
 nav {
     display: flex;
-    /* align-items: center; */
     padding: 8px 10px;
     
 }
@@ -60,15 +58,71 @@ main {
     height: 80vh;
 }
 .logo {
-    margin: 50px auto;
+    margin: 40px auto;
 }
 /* SEARCH */
-
+.search-section {
+    display: flex;
+    border:1px solid #dcdcdc;
+    border-radius: 30px;
+    width: 580px;
+    max-width: 80vw;
+    height: 30px;
+}
+.search-section:hover{
+    box-shadow: 0 1px 6px rgb(32 33 36 / 28%);
+}
+.text-input:focus-within {
+    outline: none;
+}
+.text-input {
+    height: 30px;
+    border: none;
+    width: 2000px;
+}
+.side-icons {
+    padding-top: 3px;
+}
 /* BUTTONS */
+.btn-group {
+    display: flex;
+    margin-top: 40px;
+    
+}
+button {
+    border: 1px solid transparent;
+    color:gray;
+    border-radius: 4px;
+    background-color: #f5f5f5;
+    padding: 10px;
+    margin: 5px;
+}
+button:hover {
+    border: 1px solid #c8c8c8;
+}
 /* FOOTER */
 footer {
     background-color: lightgray;
     width: 100%;
     position: fixed;
     bottom: 0;
+}
+#carbon-neutral {
+    display: block;
+    margin: 0 auto;
+    font-size: 0.8em;
+    padding: 20px 0;
+
+    text-align: center;
+}
+#ftr-links {
+    display: flex;
+    justify-content: space-around;
+    font-size: 0.8em;
+    padding-bottom: 10px;
+}
+
+.ftr-right-links {
+    display: flex;
+    justify-content: flex-end;
 }
