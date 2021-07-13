@@ -5,26 +5,28 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/google-homepage/styles.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <title>Google</title>
 </head>
 <body>
     <header id="header">
-        <div class="nav-bar">
-            <div class="nav-left-links">
+        <nav>
+            <div id="nav-left-links">
                 <ol>
-                    <a href="#"><li>About</li></a>
-                    <a href="#"><li>Store</li></a>
+                    <a href="#" id="about"><li>About</li></a>
+                    <a href="#" id="store"><li>Store</li></a>
                 </ol>
             </div>
-            <div class="nav-right-links">
+            <div id="nav-right-links">
                 <ol>
-                    <a href="#"><li>Gmail</li></a>
-                    <a href="#"><li>Images</li></a>
+                    <a href="#" id="gmail"><li>Gmail</li></a>
+                    <a href="#" id="images"><li>Images</li></a>
                 </ol>
-                <img id="google-apps-logo">Google Apps
-                <img id="google-profile-logo">Google Profile
+                <span class="material-icons">
+                    apps</span>
+                <img id="google-profile-logo" src="https://lh3.googleusercontent.com/ogw/ADea4I7zphOXwrpsCGyWMDDwdAOeWOTS3bZsOhoGN6so=s32-c-mo">
             </div>
-        </div>
+        </nav>
     </header>
     <main id="main-section">
         <div class="logo">
@@ -35,12 +37,12 @@
             <input type="text" alt="Search bar text area">
             <img id="microphone">
         </div>
-        <div class="btns">
-            <div id="left-btn">
-                <button>Google Search</button>
+        <div class="btn-group">
+            <div class="button">
+                <button id="left-btn">Google Search</button>
             </div>
-            <div id="right-btn">
-                <button>I'm Feeling Lucky</button>
+            <div class="button">
+                <button id="right-btn">I'm Feeling Lucky</button>
             </div>
         </div>
     </main>
